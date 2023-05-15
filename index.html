@@ -14,20 +14,22 @@
       <img src="logo/Logo Gold PNG.png" />
       <div>
         <!-- <div id="test"></div> -->
-        <a href="" target="_blank">Our services</a>
-        <a href="" target="_blank">Projects</a>
-        <a href="" target="_blank">Team</a>
-        <a href="" target="_blank">About</a>
+        <p class="navbar" href="" target="_blank">Our Services</p>
+        <p class="navbar" href="" target="_blank">Our Work</p>
+        <p class="navbar" href="" target="_blank">Team</p>
+        <p class="navbar" href="" target="_blank">About Us</p>
       </div>
-      <button>Contact Us</button>
+      <button onclick="Sto(5)">Contact Us</button>
       <!-- <div id="line"></div> -->
     </nav>
 
     <div class="main">
       <div class="land">
         <div class="back"></div>
-        <div>
-          <p class="thing">Looking to build your dream Home?</p>
+        <div style="flex-grow: 3; margin-top: -2rem">
+          <span class="thing">Looking to</span>
+          <span class="thing">build your</span>
+          <span class="thing">dream Home?</span>
           <p id="small">We can help you in NH Queens Construction.</p>
         </div>
         <div class="pics">
@@ -49,28 +51,42 @@
           <img src="imgs/8.png" />
         </div>
       </div>
+      <nav class="mainbar in" id="second">
+        <div>
+          <button class="navbar2 selected" id="el1">Our Services</button>
+        </div>
+        <div>
+          <button class="navbar2" id="el2">Our Work</button>
+        </div>
+        <div>
+          <button class="navbar2" id="el3">Team</button>
+        </div>
+        <div>
+          <button class="navbar2" id="el4">About Us</button>
+        </div>
+      </nav>
       <div class="cardcontainer">
-        <section class="card">
-          <div class="title" style="flex-grow: 1">
+        <section class="card" id="card1">
+          <div id="c1" class="incard"></div>
+          <span class="title pan">Our Services</span>
+          <div class="title" style="flex-grow: 5">
             <div class="line2"></div>
-            <span>Our Services</span>
             <p>
-              At our agency, we believe in providing our clients with
-              personalized service that meets their unique needs. We work
-              closely with our clients to understand their vision for their
-              construction project and to develop a plan that meets their
-              specifications and budget. Our team is highly skilled and
-              experienced, and we use the latest tools and technology to ensure
-              that our work is of the highest quality. We take pride in our work
-              and are committed to providing our clients with exceptional
-              service. Our goal is to exceed our clients' expectations on every
-              project, no matter how big or small. We believe that open
-              communication and transparency are key to building strong
-              relationships with our clients, and we strive to be responsive and
-              available to our clients throughout the construction process.
+              At NH Queens Construction, we pride ourselves in providing clients
+              with personalised service that meets each client’s unique needs.
+              We work closely with clients for each project, we understand their
+              needs to carefully develop designs, budgets, and specifications
+              accordingly. Our team of leading experts help clients in every
+              step of the journey from planning, designing, to the final build.
+              Using the latest technology and tools ensures our work is always
+              of the highest standard. Our passionate team aims to exceed all
+              client expectations regardless of how big or small the project. We
+              value transparency and open communication so our clients can be
+              satisfied through honesty. Our team is highly responsive and
+              accessible to our clients throughout the entire process.
             </p>
           </div>
-          <div class="det serv" style="flex-grow: 5">
+          <!-- <div class="det serv" style="flex-grow: 5">
             <p>↦ Construction</p>
             <div class="line3"></div>
             <p>↦ Design</p>
@@ -79,12 +95,18 @@
             <div class="line3"></div>
             <p>↦ Build</p>
             <div class="line3"></div>
-          </div>
+          </div> -->
         </section>
-        <section class="card">
-          <div class="title" style="flex-grow: 1">
+        <section class="card" id="card2">
+          <span class="title pan" style="flex-grow: 3">Our work</span>
+          <div class="title" style="flex-grow: 2">
             <div class="line2"></div>
-            <span>Projects</span>
+
+            <p style="width: 20vw">
+              Here we have highlighted works from our latest projects. Scroll to
+              see the diverse range of builds, and gain some inspiration for
+              your dream home.
+            </p>
           </div>
           <div class="det pro">
             <img src="imgs/1.png" />
@@ -96,12 +118,13 @@
             <img src="imgs/7.png" />
           </div>
         </section>
-        <section class="card">
-          <div class="title" style="flex-grow: 1">
+        <section class="card" id="card3">
+          <div id="c3" class="incard"></div>
+          <span class="title pan" style="flex-grow: 1">Team</span>
+          <!-- <div class="title" style="flex-grow: 1">
             <div class="line2"></div>
-            <span>Team</span>
-          </div>
-          <div class="det names">
+          </div> -->
+          <div class="det names" style="flex-grow: 3">
             <div class="person">
               <p>Clemente Becker</p>
               <p class="job">Designer</p>
@@ -129,44 +152,73 @@
             <div class="line4"></div>
           </div>
         </section>
-        <section class="card" style="z-index: 0">
+        <section class="card" style="z-index: 0" id="card4">
+          <span class="title pan">About Us</span>
           <div class="title">
             <div class="line2"></div>
-            <span>About</span>
+            <p>
+              NH Queens construction is a full service construction company that
+              provides refined, modern designs to the GTA. We aim to provide our
+              clients with homes that exceed all expectations and standards. We
+              have established a strong reputation due to our reliability, great
+              workmanship, and commitment to the customer. We support every step
+              of the journey, from idea building, to design, and final
+              construction. Our talented design team can consult with you to
+              help you achieve great design ideas for your projects. We welcome
+              new clients, whether the project is large or small.
+            </p>
           </div>
           <div class="det">
+            <!-- <p>Things</p>
             <p>Things</p>
             <p>Things</p>
             <p>Things</p>
-            <p>Things</p>
-            <p>Things</p>
+            <p>Things</p> -->
           </div>
         </section>
       </div>
     </div>
 
-    <div class="footer">
+    <div class="footer" id="card5">
+      <div class="back2"></div>
       <div class="footer2">
-        <div class="ft2" style="width: 20vw">
-          <img src="logo/Logo Black.png" /><br />
-          <span id="this">Bringing your vision to life.</span>
+        <div
+          class="ft2"
+          style="
+            width: 25vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+          "
+        >
+          <img src="logo/Logo White.png" /><br />
         </div>
-        <div class="ft2">
-          <a href="nhqueens.com" target="_blank">nhqueens.com</a>
+        <div class="info">
+          <div class="th">
+            <img class="icons" src="logo/insta.png" style="width: 20%" /><a
+              href="nhqueens.com"
+              target="_blank"
+              >NHQ.contruction</a
+            >
+          </div>
+          <div class="th">
+            <img class="icons" src="logo/phone.png" style="width: 23%" />
+            <p>(647)8714206</p>
+            <p>(647)4015450</p>
+          </div>
+          <div class="th">
+            <img src="logo/mail.png" class="icons" />
+            <a href="helen@nhqueens.com" target="_blank">helen@nhqueens.com</a>
+            <a href="nosheen@nhqueens.com" target="_blank"
+              >nosheen@nhqueens.com</a
+            >
+          </div>
         </div>
-        <div class="ft2 ding">
-          <p>(647)8714206</p>
-          <p>(647)4015450</p>
-        </div>
-        <div class="ft2">
-          <a href="helen@nhqueens.com" target="_blank">helen@nhqueens.com</a
-          ><br />
-          <a href="nosheen@nhqueens.com" target="_blank"
-            >nosheen@nhqueens.com</a
-          >
-        </div>
+
+        <span id="this">Bringing your vision to life.</span>
+        <img src="logo/vima.png" style="position: absolute; bottom: 0.5rem" />
       </div>
-      <div class="line5"></div>
+      <!-- <div class="line5"></div> -->
       <div class="footer3">
         <div></div>
         <div></div>
